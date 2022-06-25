@@ -14,7 +14,7 @@ public class DAOOc {
 
     public DAOOc(){
         FirebaseDatabase db = FirebaseDatabase.getInstance("https://dairaapp-b516f-default-rtdb.firebaseio.com/");
-        databaseReference = db.getReference("Users").child("OCs");
+        databaseReference = db.getReference("Users").child("Mentor").child("OCs");
     }
 
     public Task<Void> add(OC oc){return databaseReference.push().setValue(oc);

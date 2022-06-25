@@ -30,7 +30,7 @@ public class Dashboard extends AppCompatActivity {
         });
 
         mentorCard.setOnClickListener(v -> {
-            Intent intent = new Intent(Dashboard.this, SplashScreen.class);
+            Intent intent = new Intent(Dashboard.this, MentorMenu.class);
             startActivity(intent);
         });
 

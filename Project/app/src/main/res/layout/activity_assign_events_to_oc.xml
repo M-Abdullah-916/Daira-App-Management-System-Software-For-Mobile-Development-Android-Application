@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/eventbackgorund"
-    tools:context=".Views.AddSubEvent">
+    android:background="@drawable/gradientbgtwo"
+    tools:context=".Views.AssignEventsToOC">
 
     <TextView
         android:id="@+id/textView6"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:text="ADD SUB-EVENT"
+        android:text="Assign Sub-Event"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -22,72 +22,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
 
-    <ImageView
-        android:id="@+id/subeventimage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="28dp"
-        app:flow_horizontalAlign="center"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        android:src="@drawable/add"
-        tools:srcCompat="@drawable/add" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Description"
+        android:text="OC Name"
         android:textColor="#000000"
         android:textSize="17sp"
-        app:layout_constraintEnd_toStartOf="@+id/subeventdesc"
-        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintEnd_toStartOf="@+id/assignocname"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/subeventname"
+        android:id="@+id/assignoceventname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="28dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Enter Event Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subeventimage" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Name"
+        android:layout_marginTop="172dp"
+        android:text="Event Name"
         android:textColor="#000000"
         android:textSize="17sp"
-        app:layout_constraintEnd_toStartOf="@+id/subeventname"
+        app:layout_constraintEnd_toStartOf="@+id/assignoceventname"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subeventimage" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/subeventdesc"
+        android:id="@+id/assignocname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Add Description"
+        android:hint="Enter OC Name"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subeventname" />
+        app:layout_constraintTop_toBottomOf="@+id/assignoceventname" />
 
     <TextView
         android:id="@+id/textView7"
@@ -95,27 +80,27 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="44dp"
-        android:text="Parent"
+        android:text="Date"
         android:textColor="#000000"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/subeventparent"
+        android:id="@+id/assignoceventdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Enter Parent Event"
+        android:hint="Enter Date"
         android:inputType="date"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subeventdesc" />
+        app:layout_constraintTop_toBottomOf="@+id/assignocname" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/addsubeventbtn"
+        android:id="@+id/addeventbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -125,10 +110,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subeventparent" />
+        app:layout_constraintTop_toBottomOf="@+id/assignoceventdate" />
 
     <ProgressBar
-        android:id="@+id/addsubeventpb"
+        android:id="@+id/addeventpb"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,21 +122,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addsubeventbtn"
+        app:layout_constraintTop_toBottomOf="@+id/addeventbtn"
         app:layout_constraintVertical_bias="0.189" />
 
-    <Button
-        android:id="@+id/backbtn"
-        android:layout_width="115dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#E65A5A"
-        android:onClick="GoBack"
-        android:text="Back"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addsubeventbtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

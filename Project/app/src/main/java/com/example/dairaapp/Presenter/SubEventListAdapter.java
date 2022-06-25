@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dairaapp.Model.Event;
 import com.example.dairaapp.Model.SubEvent;
 import com.example.dairaapp.R;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -49,7 +48,7 @@ public class SubEventListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         SubEventVH vh = (SubEventVH) holder;
         SubEvent event = list.get(position);
         vh.name.setText(event.getSubEventName());
-        vh.date.setText(event.getSubEventDate());
+        vh.date.setText(event.getSubEventParent());
         try {
             Log.d("TAG",event.getSubImageKey());
             final File localFile = File.createTempFile(event.getSubImageKey(),"jpeg");

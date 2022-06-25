@@ -31,5 +31,10 @@ public class MentorMenu extends AppCompatActivity {
             Intent intent = new Intent(MentorMenu.this,OCPanel.class);
             startActivity(intent);
         });
+
+        ocAssignEventsCard.setOnClickListener(v -> {
+            Intent intent = new Intent(MentorMenu.this,AssignEventsToOC.class);
+            startActivity(intent);
+        });
     }
 }

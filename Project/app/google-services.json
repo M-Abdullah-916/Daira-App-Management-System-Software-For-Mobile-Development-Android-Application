@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "36356494656",
-    "project_id": "dairaapp-b516f",
-    "storage_bucket": "dairaapp-b516f.appspot.com"
+    "project_number": "8868990082",
+    "project_id": "smdporject",
+    "storage_bucket": "smdporject.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:36356494656:android:443aa8e8b1d9df32ee56a5",
+        "mobilesdk_app_id": "1:8868990082:android:cf15348814e8c9fa1b789b",
         "android_client_info": {
           "package_name": "com.example.dairaapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "36356494656-u188jm9n4u7o5jnsojg6un6is4eij2q4.apps.googleusercontent.com",
+          "client_id": "8868990082-5vrtkvk45d5k9drj2p5im27fs7fm5bdp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCrLUebw4bM25dDadJMNgQHYA9RW3X28uI"
+          "current_key": "AIzaSyBnYRnGz68BwWU_Lj3jaZVov0-cMx_xCdk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "36356494656-u188jm9n4u7o5jnsojg6un6is4eij2q4.apps.googleusercontent.com",
+              "client_id": "8868990082-5vrtkvk45d5k9drj2p5im27fs7fm5bdp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

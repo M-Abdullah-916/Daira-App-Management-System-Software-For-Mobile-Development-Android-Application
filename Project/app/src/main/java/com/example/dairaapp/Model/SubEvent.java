@@ -1,15 +1,15 @@
 package com.example.dairaapp.Model;
 
 public class SubEvent {
-    String subEventName, subEventDesc, subEventDate, subImageKey;
+    String subEventName, subEventDesc, subEventParent, subImageKey;
     String key;
 
     public SubEvent() { }
 
-    public SubEvent(String subEventName, String subEventDesc, String subEventDate, String subImageKey) {
+    public SubEvent(String subEventName, String subEventDesc, String subEventParent, String subImageKey) {
         this.subEventName = subEventName;
         this.subEventDesc = subEventDesc;
-        this.subEventDate = subEventDate;
+        this.subEventParent = subEventParent;
         this.subImageKey = subImageKey;
     }
 
@@ -37,12 +37,12 @@ public class SubEvent {
         this.subEventDesc = subEventDesc;
     }
 
-    public String getSubEventDate() {
-        return subEventDate;
+    public String getSubEventParent() {
+        return subEventParent;
     }
 
-    public void setSubEventDate(String subEventDate) {
-        this.subEventDate = subEventDate;
+    public void setSubEventParent(String subEventParent) {
+        this.subEventParent = subEventParent;
     }
 
     public String getSubImageKey() {

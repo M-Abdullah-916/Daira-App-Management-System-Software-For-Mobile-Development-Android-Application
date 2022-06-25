@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dairaapp.Model.Event;
 import com.example.dairaapp.Model.SubEvent;
 import com.example.dairaapp.R;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -58,7 +57,7 @@ public class SubEventUpdateAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         SubEvent event = list.get(position);
         dao = new DAOSubEvent();
         vh.name.setText(event.getSubEventName());
-        vh.date.setText(event.getSubEventDate());
+        vh.date.setText(event.getSubEventParent());
         dbReference = FirebaseDatabase.getInstance().getReference("SubEvents");
 
         vh.layoutId.setOnClickListener(v->{
@@ -73,7 +72,7 @@ public class SubEventUpdateAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
             editName.setText(list.get(position).getSubEventName());
             editDescription.setText(list.get(position).getSubEventDesc());
-            editDate.setText(list.get(position).getSubEventDate());
+            editDate.setText(list.get(position).getSubEventParent());
             setImage(position,imageView);
 
             updateBtn.setOnClickListener(w->{
@@ -99,7 +98,7 @@ public class SubEventUpdateAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                 SubEvent updatedEvent = new SubEvent();
                 updatedEvent.setSubEventName(eventName);
                 updatedEvent.setSubEventDesc(eventDesc);
-                updatedEvent.setSubEventDate(eventDate);
+                updatedEvent.setSubEventParent(eventDate);
 
                 dbReference.child(list.get(position).getKey()).child("subEventName").setValue(eventName);
                 dbReference.child(list.get(position).getKey()).child("subEventDesc").setValue(eventDesc);

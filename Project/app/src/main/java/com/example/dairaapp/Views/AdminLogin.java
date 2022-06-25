@@ -53,7 +53,7 @@ public class AdminLogin extends AppCompatActivity {
             String password = passwordText.getText().toString().trim();
             Log.d("TAG",email + password);
 
-            mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            /*mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
@@ -65,15 +65,15 @@ public class AdminLogin extends AppCompatActivity {
                         pb.setVisibility(View.GONE);
                     }
                 }
-            });
+            });*/
 
-           /* mAuth.createUserWithEmailAndPassword(email,password)
+            mAuth.createUserWithEmailAndPassword(email,password)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
                                 Admin user = new Admin(email,password);
-                                FirebaseDatabase.getInstance("https://dairaapp-b516f-default-rtdb.firebaseio.com/").getReference("Users")
+                                FirebaseDatabase.getInstance("https://smdporject-default-rtdb.firebaseio.com/").getReference("Users")
                                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                         .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
@@ -95,7 +95,7 @@ public class AdminLogin extends AppCompatActivity {
                             }
 
                         }
-                    });*/
+                    });
 
             Intent intent = new Intent(AdminLogin.this, SplashScreen.class);
         });

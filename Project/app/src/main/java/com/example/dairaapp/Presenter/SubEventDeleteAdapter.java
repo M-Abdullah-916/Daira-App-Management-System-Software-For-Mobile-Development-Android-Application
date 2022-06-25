@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dairaapp.Model.Event;
 import com.example.dairaapp.Model.SubEvent;
 import com.example.dairaapp.R;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -56,7 +55,7 @@ public class SubEventDeleteAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         SubEvent event = list.get(position);
         dao = new DAOSubEvent();
         vh.name.setText(event.getSubEventName());
-        vh.date.setText(event.getSubEventDate());
+        vh.date.setText(event.getSubEventParent());
         dbReference = FirebaseDatabase.getInstance().getReference("SubEvents");
 
         vh.layoutId.setOnClickListener(v->{

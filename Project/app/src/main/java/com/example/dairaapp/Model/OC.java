@@ -2,7 +2,7 @@ package com.example.dairaapp.Model;
 
 public class OC {
 
-    String name,email,password,eventID,key;
+    String name,email,password,eventID,key,mentor;
 
     public OC(){}
 

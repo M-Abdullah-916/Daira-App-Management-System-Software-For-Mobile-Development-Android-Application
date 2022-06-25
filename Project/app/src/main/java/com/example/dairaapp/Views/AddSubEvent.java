@@ -16,11 +16,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.dairaapp.Model.Event;
 import com.example.dairaapp.Model.SubEvent;
-import com.example.dairaapp.Presenter.DAOEvent;
 import com.example.dairaapp.Presenter.DAOSubEvent;
-import com.example.dairaapp.Presenter.RecyclerViewUpdateEvent;
 import com.example.dairaapp.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -34,8 +31,8 @@ import java.util.UUID;
 
 public class AddSubEvent extends AppCompatActivity {
 
-    EditText subEventName,subEventDesc, subEventDate;
-    String name, description, date;
+    EditText subEventName,subEventDesc, subEventParent;
+    String name, description, parent;
     Button addBtn;
     ImageView eventImage;
     ProgressBar pb;
@@ -57,7 +54,7 @@ public class AddSubEvent extends AppCompatActivity {
 
         subEventName = findViewById(R.id.subeventname);
         subEventDesc = findViewById(R.id.subeventdesc);
-        subEventDate = findViewById(R.id.subeventdate);
+        subEventParent = findViewById(R.id.subeventparent);
 
         addBtn = findViewById(R.id.addsubeventbtn);
         pb = findViewById(R.id.addsubeventpb);
@@ -101,21 +98,20 @@ public class AddSubEvent extends AppCompatActivity {
         name = subEventName.getText().toString().trim();
         Log.d("TAG",name);
         description = subEventDesc.getText().toString().trim();
-        date = subEventDate.getText().toString().trim();
-
+        parent = subEventParent.getText().toString().trim();
 
         final String randomKey = UUID.randomUUID().toString();
         StorageReference riverref = storageReference.child("images/" + randomKey);
 
         if(imageUri != null){
-            validate(subEventName,subEventDesc,subEventDate);
+            validate(subEventName,subEventDesc,subEventParent);
             pd.show();
             riverref.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     pd.dismiss();
                     Snackbar.make(findViewById(R.id.eventimage),"Image Uploaded",Snackbar.LENGTH_LONG).show();
-                    event = new SubEvent(name,description,date,randomKey);
+                    event = new SubEvent(name,description,parent,randomKey);
 
                     dao.add(event);
                     Toast.makeText(AddSubEvent.this, "Sub_Event Added", Toast.LENGTH_SHORT).show();
@@ -140,10 +136,10 @@ public class AddSubEvent extends AppCompatActivity {
 
     }
 
-    private void validate(EditText name,EditText description,EditText date) {
+    private void validate(EditText name,EditText description,EditText Parent) {
         String nameVal = name.getText().toString();
         String descriptionVal = description.getText().toString();
-        String dateVal = date.getText().toString();
+        String parent = Parent.getText().toString();
 
         if(nameVal.isEmpty()){
             name.setError("Please enter the name");
@@ -155,9 +151,14 @@ public class AddSubEvent extends AppCompatActivity {
             description.requestFocus();
             return;
         }
-        if(dateVal.isEmpty()){
-            date.setError("Please enter the date");
-            date.requestFocus();
+        if(parent.isEmpty()){
+            Parent.setError("Please enter the date");
+            Parent.requestFocus();
+            return;
+        }
+        if(!dao.getParent(parent)){
+            Parent.setError("Parent Not Found");
+            Parent.requestFocus();
             return;
         }
     }

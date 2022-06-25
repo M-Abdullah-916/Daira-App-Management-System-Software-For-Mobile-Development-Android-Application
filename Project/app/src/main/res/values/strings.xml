@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DairaApp</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="admin">ADMIN</string>
+    <string name="mentor">MENTOR</string>
+    <string name="committe">COMMITTE</string>
+    <string name="organizing">ORGANIZING</string>
+    <string name="participant">PARTICIPANT</string>
+    <string name="todo">TODO</string>
+</resources>

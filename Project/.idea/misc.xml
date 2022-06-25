@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/eventitem.xml" value="0.338" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/gradientbgtwo.xml" value="0.3675" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/gradientlogin.xml" value="0.2845" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_admin.xml" value="0.2655" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_assignevent.xml" value="0.3675" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_committe.xml" value="0.2655" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_event.xml" value="0.3675" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_mentor.xml" value="0.2655" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_mentormanage.xml" value="0.3675" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_participants.xml" value="0.2655" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/ic_registrations.xml" value="0.3675" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/drawable/roundededittext.xml" value="0.3675" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_add_event.xml" value="0.25" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_add_mentor.xml" value="0.33" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_admin_login.xml" value="0.33" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_admin_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_dashboard.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_delete_event.xml" value="0.33055555555555555" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_delete_mentor.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_event_panel.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_mentor_panel.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_recycler_view_show_event.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_recycler_view_update_event.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_registrations_panel.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/activity_show_mentor.xml" value="0.25" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/delete_item_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/eventitem.xml" value="0.42792792792792794" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/singlementor.xml" value="0.33" />
+        <entry key="..\:/6thSemester/SMD/Project/app/src/main/res/layout/updateeventitemlayout.xml" value="0.33" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_add_event.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_add_mentor.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_add_oc.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_add_sub_event.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_admin_login.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_admin_menu.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_dashboard.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_delete_event.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_delete_mentor.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_delete_oc.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_delete_sub_event.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_event_panel.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_mentor_login.xml" value="0.4" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_mentor_menu.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_mentor_panel.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_ocpanel.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_recycler_view_show_event.xml" value="0.176" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_recycler_view_show_sub_event.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_recycler_view_update_event.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_recycler_view_update_sub_event.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_registrations_panel.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_show_mentor.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_show_oc.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_sub_event_delete_adapter.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_sub_event_panel.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/activity_update_oc.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/eventitem.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/occardsingle.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/singlementor.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/subeventitem.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/updateeventitemlayout.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/updateocitemlayout.xml" value="0.259375" />
+        <entry key="..\:/Users/Ibm/Desktop/Project/app/src/main/res/layout/updatesubeventitemlayout.xml" value="0.259375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
